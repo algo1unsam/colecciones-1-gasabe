@@ -1,1 +1,23 @@
-r
+import capos.*
+
+
+describe "agarrar"{
+	test "encuentro los artefactos y solo puedo llevar 2" {
+		rolando.agarrar(espadaDelDestino)
+		rolando.agarrar(libroDeHechizos)
+		rolando.agarrar(collarDivino)
+		rolando.agarrar(armaduraValyrio)
+		assert.equals( #{espadaDelDestino,libroDeHechizos }, rolando.objetosAgarrados() )
+	}
+}
+describe "irAlCastillo"{
+	test "voy al castillo y guardo lo de mi inventario tengo 2 items y depsues puedo agarrar otros 2" {
+		rolando.agarrar(espadaDelDestino)
+		rolando.agarrar(libroDeHechizos)
+		rolando.irCastilloDePiedra()
+	 	rolando.agarrar(collarDivino)
+	 	rolando.irCastilloDePiedra()
+	 	assert.equals(#{espadaDelDestino,libroDeHechizos,collarDivino}, rolando.objetosCastillo())
+	}
+}
+
