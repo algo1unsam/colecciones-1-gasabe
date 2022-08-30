@@ -17,6 +17,6 @@ describe "irAlCastillo"{
 		rolando.irCastilloDePiedra()
 	 	rolando.agarrar(collarDivino)
 	 	rolando.irCastilloDePiedra()
-	 	assert.equals(#{espadaDelDestino,libroDeHechizos,collarDivino}, rolando.objetosCastillo())
+	 	assert.equals([espadaDelDestino,libroDeHechizos,collarDivino], rolando.objetosCastillo())
 	}
 }
