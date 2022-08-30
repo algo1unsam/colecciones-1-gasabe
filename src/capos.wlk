@@ -22,3 +22,5 @@ object rolando{
  object libroDeHechizos{}
  object collarDivino{}
  object armaduraValyrio{}
+
+ 

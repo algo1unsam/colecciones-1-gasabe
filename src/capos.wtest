@@ -20,4 +20,3 @@ describe "irAlCastillo"{
 	 	assert.equals(#{espadaDelDestino,libroDeHechizos,collarDivino}, rolando.objetosCastillo())
 	}
 }
-
